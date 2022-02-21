@@ -3,7 +3,9 @@ import { NextResponse } from 'next/server'
 
 const dev = process.env.NODE_ENV !== 'production'
 
-export const server = dev ? 'http://localhost:3000' : process.env.NOW_URL //change this
+export const server = dev
+  ? 'http://localhost:3000'
+  : 'https://elated-bhabha-63168a.netlify.app' //change this
 
 export async function middleware(req: any) {
   const token = await getToken({ req, secret: process.env.JWT_SECRET })
