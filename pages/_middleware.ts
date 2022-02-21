@@ -3,9 +3,7 @@ import { NextResponse } from 'next/server'
 
 const dev = process.env.NODE_ENV !== 'production'
 
-export const server = dev
-  ? 'http://localhost:3000'
-  : 'https://your_deployment.server.com' //change this
+export const server = dev ? 'http://localhost:3000' : process.env.NOW_URL //change this
 
 export async function middleware(req: any) {
   const token = await getToken({ req, secret: process.env.JWT_SECRET })
@@ -17,6 +15,6 @@ export async function middleware(req: any) {
   }
 
   if (!token && pathname !== '/login') {
-    return NextResponse.redirect('/login')
+    return NextResponse.redirect(server + '/login')
   }
 }

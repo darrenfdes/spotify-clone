@@ -44,7 +44,7 @@ const Center: React.FC = () => {
           className="flex cursor-pointer items-center space-x-3 rounded-full
         bg-black bg-black p-1 pr-2 text-white
         opacity-90 hover:opacity-80"
-          onClick={() => signOut}
+          onClick={signOut}
         >
           <img
             className="h-10 w-10 rounded-full"
