@@ -3,12 +3,12 @@
 Live demo deployed at https://elated-bhabha-63168a.netlify.app'
 
 Note: premium spotify account required for music playback and control
-
+![image](https://user-images.githubusercontent.com/46609190/155020939-81f3aa58-099d-43b5-8267-c9315f74cbec.png)
 ![image](https://user-images.githubusercontent.com/46609190/155010838-e63bdb7f-8fe7-4dfb-bc1e-020c49337722.png)
 ![image](https://user-images.githubusercontent.com/46609190/155010892-89f57cc0-1ff1-486e-af4d-6f62c8272998.png)
 
 ![image](https://user-images.githubusercontent.com/46609190/155010589-4f597a89-bf2b-4707-8138-f7298a2b8dab.png)
-![image](https://user-images.githubusercontent.com/46609190/155020939-81f3aa58-099d-43b5-8267-c9315f74cbec.png)
+
 
 
 ## Preview
