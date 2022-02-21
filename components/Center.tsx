@@ -17,8 +17,6 @@ const colors = [
   'from-purple-500',
 ]
 
-const color = shuffle(colors).pop()
-
 const Center: React.FC = () => {
   const { data: session } = useSession()
   const [color, setColor] = useState<string>('')
@@ -29,15 +27,13 @@ const Center: React.FC = () => {
   const [playlist, setPlaylist] = useRecoilState(playlistState)
 
   useEffect(() => {
-    setColor(color)
+    setColor(shuffle(colors).pop())
   }, [playlistId])
 
   useEffect(() => {
     spotifyApi
       .getPlaylist(playlistId)
-      .then((data) => {
-        setPlaylist(data.body)
-      })
+      .then((data) => setPlaylist(data?.body))
       .catch((err) => console.log('Somehting went wrong!', err))
   }, [spotifyApi, playlistId])
 
@@ -48,7 +44,7 @@ const Center: React.FC = () => {
           className="flex cursor-pointer items-center space-x-3 rounded-full
         bg-black bg-black p-1 pr-2 text-white
         opacity-90 hover:opacity-80"
-          onClick={signOut}
+          onClick={() => signOut}
         >
           <img
             className="h-10 w-10 rounded-full"

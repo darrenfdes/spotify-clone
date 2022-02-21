@@ -16,6 +16,8 @@ const useSpotify = () => {
         signIn()
       }
 
+      console.log(session.user)
+
       spotifyApi.setAccessToken(session.user.accessToken)
     }
   }, [session])
