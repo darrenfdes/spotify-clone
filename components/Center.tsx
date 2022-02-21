@@ -17,6 +17,8 @@ const colors = [
   'from-purple-500',
 ]
 
+const color = shuffle(colors).pop()
+
 const Center: React.FC = () => {
   const { data: session } = useSession()
   const [color, setColor] = useState<string>('')
@@ -27,7 +29,7 @@ const Center: React.FC = () => {
   const [playlist, setPlaylist] = useRecoilState(playlistState)
 
   useEffect(() => {
-    setColor(shuffle(colors).pop())
+    setColor(color)
   }, [playlistId])
 
   useEffect(() => {
