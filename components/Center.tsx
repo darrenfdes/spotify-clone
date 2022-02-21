@@ -37,6 +37,11 @@ const Center: React.FC = () => {
       .catch((err) => console.log('Somehting went wrong!', err))
   }, [spotifyApi, playlistId])
 
+  const signOutHandler = () => {
+    console.log('signout')
+    signOut()
+  }
+
   return (
     <div className=" h-screen flex-grow overflow-y-scroll scrollbar-hide">
       <header className="absolute top-5 right-8">
@@ -44,7 +49,7 @@ const Center: React.FC = () => {
           className="flex cursor-pointer items-center space-x-3 rounded-full
         bg-black bg-black p-1 pr-2 text-white
         opacity-90 hover:opacity-80"
-          onClick={signOut}
+          onClick={signOutHandler}
         >
           <img
             className="h-10 w-10 rounded-full"
