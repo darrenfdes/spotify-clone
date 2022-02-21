@@ -1,6 +1,9 @@
 # Next.js + Tailwind CSS Example
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+Live demo deployed at https://elated-bhabha-63168a.netlify.app'
+
+Note: premium spotify account required for music playback and control
+
 ![image](https://user-images.githubusercontent.com/46609190/155010838-e63bdb7f-8fe7-4dfb-bc1e-020c49337722.png)
 ![image](https://user-images.githubusercontent.com/46609190/155010892-89f57cc0-1ff1-486e-af4d-6f62c8272998.png)
 
